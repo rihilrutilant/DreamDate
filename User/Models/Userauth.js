@@ -40,10 +40,10 @@ const User = new Schema({
         type: String,
         require: true,
     },
-    // Images: {
-    //     type: Buffer,
-    //     require: true
-    // },
+    Imgpath: {
+        type: String,
+        required: true
+    },
     Interst: {
         type: String,
         require: true,

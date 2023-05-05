@@ -2,17 +2,17 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const Connection_history_Schema = new Schema({
-    User: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+    User_id: {
+        type: String,
+        require: true
     },
-    Selected_profile: {
+    Selected_profile_id: {
         type: String,
         require: true
     },
     loosed_connections: {
         type: Number,
-        default: 0
+        default: 6
     },
     Date: {
         type: Date,

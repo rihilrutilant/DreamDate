@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const Selected_profileSchema = new Schema({
-    User: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+    User_id: {
+        type: String,
+        require: true
     },
-    Selected_profile: {
+    Selected_profile_id: {
         type: String,
         require: true
     },
